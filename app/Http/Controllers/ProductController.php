@@ -51,7 +51,7 @@ class ProductController extends BaseController
                 ];
     		}
     	} catch (\Exception $ex) {
-    		
+    		echo "{$ex->getMessage()}";
     	}
     	
     	return response()->json($result);
@@ -137,7 +137,10 @@ class ProductController extends BaseController
                 ];
             }
         } catch (\Exception $ex) {
-            
+            syslog(LOG_ERR, "[DELETE-PRODUCT] Error when trying to delete id ({$id}): {$ex->getMessage()}");
+            $result = [
+                    'errors' => ['message' => 'Unexpected error']
+                ];
         }
         
         return response()->json($result);
@@ -148,7 +151,7 @@ class ProductController extends BaseController
         return response()->json(['message' => 'Hello there']);
     }
 
-    private function dateTime()
+    public function dateTime()
     {
         return new \DateTime();
     }
