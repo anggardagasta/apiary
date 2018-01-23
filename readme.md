@@ -18,4 +18,4 @@
 Show Data: https://drive.google.com/open?id=1sr9mTFSPe8NbGCh122g7SeqPAYGdlMkT
 
 # How to run unit test
-php vendor\phpunit\phpunit\phpunit tests\ProductTest.php
+Enter directory apiary, then from your console type "php vendor\phpunit\phpunit\phpunit tests\ProductTest.php"
