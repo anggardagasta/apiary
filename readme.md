@@ -1,21 +1,21 @@
-# Lumen PHP Framework
+# How to install
+- Download or clone this repo
+- Import the database file (apiary.sql)
+- Copy .env.example to .env, then open .env & fill DB_HOST, DB_PORT, DB_DATABASE, DB_USERNAME, DB_PASSWORD
 
-[![Build Status](https://travis-ci.org/laravel/lumen-framework.svg)](https://travis-ci.org/laravel/lumen-framework)
-[![Total Downloads](https://poser.pugx.org/laravel/lumen-framework/d/total.svg)](https://packagist.org/packages/laravel/lumen-framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/lumen-framework/v/stable.svg)](https://packagist.org/packages/laravel/lumen-framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/lumen-framework/v/unstable.svg)](https://packagist.org/packages/laravel/lumen-framework)
-[![License](https://poser.pugx.org/laravel/lumen-framework/license.svg)](https://packagist.org/packages/laravel/lumen-framework)
+# Authentication Endpoint
+- Create User: https://drive.google.com/open?id=1H1Alq7fSD9YM6g2H8trujgc77jQAtT8e
+- Login: https://drive.google.com/open?id=18ojyI1OfSRjx5iAFzR8gcC8h0fI5R6m5
 
-Laravel Lumen is a stunningly fast PHP micro-framework for building web applications with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Lumen attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as routing, database abstraction, queueing, and caching.
+# CRUD V1 Endpoint
+- Show Data: https://drive.google.com/open?id=1-QKPV7PJv9VekaGlznPn4X7z0PFMOEpd
+- Show Data by Id: https://drive.google.com/open?id=10yKfXRrzG5CD8XaovH4w1q3lNMXeKqN3
+- Create Data: https://drive.google.com/open?id=13nW5QDdWkJ3I9FNY3kL1VFo44AGFJoIu
+- Update Data: https://drive.google.com/open?id=1zzA34g7I5b_rR_8dGWxawnXvPmxZsEyY
+- Delete Data by Id: https://drive.google.com/open?id=1DMTJDW0e74999KtUJwclP0yL8DGQzfOO
 
-## Official Documentation
+# Testing API V2 Endpoint
+Show Data: https://drive.google.com/open?id=1sr9mTFSPe8NbGCh122g7SeqPAYGdlMkT
 
-Documentation for the framework can be found on the [Lumen website](http://lumen.laravel.com/docs).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Lumen, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Lumen framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+# How to run unit test
+php vendor\phpunit\phpunit\phpunit tests\ProductTest.php
